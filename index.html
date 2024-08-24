@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Finder & Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Emoji Finder & Generator</h1>
+        <p>Find any emoji and generate your own!</p>
+    </header>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <h2>Search for Emojis</h2>
+        <input type="text" id="emoji-search" placeholder="Search emojis by name or code...">
+        <div id="search-results"></div>
+    </section>
+
+    <!-- Emoji Categories Section -->
+    <section class="emoji-categories">
+        <h2>Emoji Categories</h2>
+        <div class="category-list">
+            <button class="category-btn" data-category="smileys">Smileys & Emotion</button>
+            <button class="category-btn" data-category="animals">Animals & Nature</button>
+            <button class="category-btn" data-category="food">Food & Drink</button>
+            <button class="category-btn" data-category="activities">Activities</button>
+            <!-- More categories as needed -->
+        </div>
+        <div id="emoji-display"></div>
+    </section>
+
+    <!-- Emoji Generator Section -->
+    <section class="emoji-generator">
+        <h2>Generate Your Own Emoji</h2>
+        <label for="emoji-input">Emoji Code:</label>
+        <input type="text" id="emoji-input" placeholder="Enter emoji code (e.g., 1F600)">
+        <button id="generate-emoji">Generate Emoji</button>
+        <div id="generated-emoji"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Emoji Finder & Generator. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
